@@ -147,6 +147,7 @@ local largeirontube={
 	energy_required = 1,
 	ingredients = {{"iron-plate", 3}},
 	result = "large-iron-tube",
-	result_count = 1
+	result_count = 1,
+	subgroup = "intermediate-product"
 }
 data:extend({basicmotor, electromagnet, basicprocessor, tincable, bolt, cleanwater, sand, glass, gravel, cement, gunpowder, largeirontube})

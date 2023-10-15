@@ -24,7 +24,7 @@ local tincable = {
 	type = "item",
 	name = "tin-cable",
 	icon = "__bztin__/graphics/icons/tinned-cable.png",
-	icon_size = 64, icon_mipmaps = 4,
+	icon_size = 64, mipmaps = 4,
 	order = "b[tin-cable]",
 	stack_size = 100,
 }
@@ -88,5 +88,14 @@ local largeirontube={
 	icon_size = 800,
 	stack_size = 25
 }
+local cobaltplate={
+	type = "item",
+	name = "cobalt-plate",
+	icon = "__redtech__/graphics/icons/cobalt_plate.png",
+	icon_size = 64, mipmaps = 4,
+	stack_size = 100,
+	subgroup = "raw-material",
+	order = "c[cobalt-plate]",
+}
 
-data:extend({basicmotor, electromagnet, basicprocessor, tincable, bolt, sand, glass, gravel, cement, gunpowder, largeirontube})
+data:extend({basicmotor, electromagnet, basicprocessor, tincable, bolt, sand, glass, gravel, cement, gunpowder, largeirontube, cobaltplate})

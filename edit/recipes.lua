@@ -210,3 +210,27 @@ data.raw.recipe["grenade"]={
     },
     result = "grenade"
 }
+data.raw.recipe["pipe"]={
+    type = "recipe",
+    name = "pipe",
+    enabled = true,
+    energy_required = 1,
+    ingredients =
+    {
+        {"large-iron-tube", 1},
+        {"iron-plate", 2}
+    },
+    result = "pipe"
+}
+data.raw.recipe["pipe-to-ground"]={
+    type = "recipe",
+    name = "pipe-to-ground",
+    energy_required = 1,
+    ingredients =
+    {
+        {"large-iron-tube", 5},
+        {"iron-plate", 5}
+    },
+    result_count = 2,
+    result = "pipe-to-ground"
+}
