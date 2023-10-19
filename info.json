@@ -4,5 +4,5 @@
 	"title": "redtech",
 	"author": "redstone_block180",
 	"factorio_version": "1.1",
-	"dependencies": ["bztin >= 0.1.10"]
+	"dependencies": ["bztin >= 0.1.10", "(?) aai-industry >= 0.5.20"]
 }

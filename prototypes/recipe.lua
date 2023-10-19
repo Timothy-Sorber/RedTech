@@ -96,7 +96,7 @@ local cleanwater = {
 }
 local sand={
 	type="recipe",
-	name="sand",
+	name="sand-crushing",
 	category = "crafting",
 	energy_required=1,
 	ingredients={{"gravel", 1}},
@@ -105,7 +105,7 @@ local sand={
 }
 local glass={
 	type = "recipe",
-	name = "glass",
+	name = "glass-smelting",
 	category = "smelting",
 	energy_required = 5,
 	ingredients = {{"sand", 5}},
