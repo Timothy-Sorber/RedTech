@@ -10,7 +10,8 @@ data.raw.recipe["assembling-machine-2"] = {
             {"basic-processor", 3},
             {"iron-gear-wheel", 5},
             {"assembling-machine-1", 1},
-            {"basic-motor", 2}
+            {"basic-motor", 2},
+            {"cobalt-plate", 5}
         },
         result = "assembling-machine-2"
     }
@@ -79,8 +80,10 @@ data.raw.recipe["advanced-circuit"] = {
 }
 
 -- Remove hand crafting
-for name, recipe in pairs(data.raw["recipe"]) do
-    if data.raw["recipe"][name].category == nil or data.raw["recipe"][name].category == "crafting" then
-        data.raw["recipe"][name].category = "advanced-crafting"
+if settings.startup["disable-hand-crafting"] then
+    for name, recipe in pairs(data.raw["recipe"]) do
+        if data.raw["recipe"][name].category == nil or data.raw["recipe"][name].category == "crafting" then
+            data.raw["recipe"][name].category = "advanced-crafting"
+        end
     end
 end

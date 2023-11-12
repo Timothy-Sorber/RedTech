@@ -32,7 +32,7 @@ data:extend({{
                 order = "d",
                 base_density = 20,
                 base_spots_per_km2 = 10,
-                has_starting_area_placement = false,
+                has_starting_area_placement = true,
                 random_spot_size_minimum = 2,
                 random_spot_size_maximum = 5,
                 regular_blob_amplitude_multiplier = 2,

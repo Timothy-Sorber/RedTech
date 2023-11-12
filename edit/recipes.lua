@@ -234,3 +234,11 @@ data.raw.recipe["pipe-to-ground"]={
     result_count = 2,
     result = "pipe-to-ground"
 }
+data.raw.recipe["steel-furnace"] = {
+    type = "recipe",
+    name = "steel-furnace",
+    ingredients = {{"steel-plate", 3}, {"stone-brick", 5}, {"heat-resistant-plating", 5}},
+    result = "steel-furnace",
+    energy_required = 5,
+    enabled = false
+}

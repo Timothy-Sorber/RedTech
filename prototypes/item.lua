@@ -97,5 +97,14 @@ local cobaltplate={
 	subgroup = "raw-material",
 	order = "c[cobalt-plate]",
 }
+local heatresistantplating={
+	type = "item",
+	name = "heat-reisistant-plating",
+	icon = "__redtech__/graphics/icons/heat_resistant_plating.png",
+	icon_size = 753,
+	stack_size = 25,
+	subgroup = "raw-material",
+	order = "d[heat-resistant-plating]"
+}
 
-data:extend({basicmotor, electromagnet, basicprocessor, tincable, bolt, sand, glass, gravel, cement, gunpowder, largeirontube, cobaltplate})
+data:extend({basicmotor, electromagnet, basicprocessor, tincable, bolt, sand, glass, gravel, cement, gunpowder, largeirontube, cobaltplate, heatresistantplating})
