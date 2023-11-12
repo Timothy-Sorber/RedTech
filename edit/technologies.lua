@@ -229,3 +229,5 @@ data.raw.technology["advanced-electronics"]={
     },
     order = "a-d-b"
 }
+data.raw.technology["advanced-material-processing"].prerequisites = {"heat-resistance", "logistic-science-pack", "steel-processing"}
+data.raw.technology["oil-processing"].prerequisites = {"fluid-handling", "heat-resistance"}

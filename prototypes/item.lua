@@ -10,7 +10,7 @@ local electromagnet = {
 	type = "item",
 	name = "electro-magnet",
 	icon = "__redtech__/graphics/icons/electromagnet.png",
-	icon_size = 500,
+	icon_size = 128,
 	stack_size = 25
 }
 local basicprocessor = {
@@ -99,9 +99,9 @@ local cobaltplate={
 }
 local heatresistantplating={
 	type = "item",
-	name = "heat-reisistant-plating",
+	name = "heat-resistant-plating",
 	icon = "__redtech__/graphics/icons/heat_resistant_plating.png",
-	icon_size = 753,
+	icon_size = 128,
 	stack_size = 25,
 	subgroup = "raw-material",
 	order = "d[heat-resistant-plating]"

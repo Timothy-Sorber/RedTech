@@ -1,9 +1,8 @@
 local electromagnetism = {
 	type = "technology",
 	name = "electromagnetism",
-	localised_description = "The icon is AI generated!",
-	icon = "__redtech__/graphics/icons/electromagnet.png",
-	icon_size = 500,
+	icon = "__redtech__/graphics/icons/electromagnetism.png",
+	icon_size = 128,
 	order = "c",
 	prerequisites = {},
 	effects = {
@@ -78,4 +77,23 @@ local basicprocessor = {
 		time = 15
 	}
 }
-data:extend({electromagnetism, logistics, radar, basicprocessor})
+local heatresistance = {
+	type = "technology",
+	name = "heat-resistance",
+	icon = "__redtech__/graphics/icons/heat_resistance.png",
+	icon_size = 128,
+	order="c",
+	prerequisites = {"automation-2"},
+	effects = {
+		{type="unlock-recipe", recipe="heat-resistant-plating"}
+	},
+	unit = {
+		count = 40,
+		ingredients ={
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1}
+		},
+		time = 20
+	}
+}
+data:extend({electromagnetism, logistics, radar, basicprocessor, heatresistance})

@@ -78,12 +78,3 @@ data.raw.recipe["advanced-circuit"] = {
     },
     result = "advanced-circuit"
 }
-
--- Remove hand crafting
-if settings.startup["disable-hand-crafting"] then
-    for name, recipe in pairs(data.raw["recipe"]) do
-        if data.raw["recipe"][name].category == nil or data.raw["recipe"][name].category == "crafting" then
-            data.raw["recipe"][name].category = "advanced-crafting"
-        end
-    end
-end

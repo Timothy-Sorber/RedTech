@@ -2,7 +2,7 @@ script.on_init(function ()
     if remote.interfaces["freeplay"] then
         if game.active_mods["aai-industry"] then
             local citems = { }
-            citems["burner-assembling-machine"] = 3
+            citems["burner-assembling-machine"] = 2
             citems["coal"] = 20
             citems["stone-furnace"] = 2
             remote.call("freeplay", "set_created_items", citems)
@@ -12,7 +12,7 @@ script.on_init(function ()
             remote.call("freeplay", "set_ship_items", sitems)
         else
             local citems = { }
-            citems["assembling-machine-1"] = 2
+            citems["assembling-machine-1"] = 1
             citems["boiler"] = 1
             citems["steam-engine"] = 1
             citems["small-electric-pole"] = 1

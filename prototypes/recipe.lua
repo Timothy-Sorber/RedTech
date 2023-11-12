@@ -150,4 +150,19 @@ local largeirontube={
 	result_count = 1,
 	subgroup = "intermediate-product"
 }
-data:extend({basicmotor, electromagnet, basicprocessor, tincable, bolt, cleanwater, sand, glass, gravel, cement, gunpowder, largeirontube})
+local heatresistantplating={
+	type = "recipe",
+	name = "heat-resistant-plating",
+	category = "crafting-with-fluid",
+	energy_required = 3,
+	ingredients = {
+		{type="fluid", name="water", amount="50"},
+		{type="item", name="steel-plate", amount="1"},
+		{type="item", name="copper-plate", amount="1"}
+	},
+	result = "heat-resistant-plating",
+	result_count = 1,
+	subgroup = "intermediate-product",
+	enabled = false
+}
+data:extend({basicmotor, electromagnet, basicprocessor, tincable, bolt, cleanwater, sand, glass, gravel, cement, gunpowder, largeirontube, heatresistantplating})
