@@ -136,6 +136,7 @@ data.raw.technology["automation"]={
     name = "automation",
     icon_size = 256, icon_mipmaps = 4,
     icon = "__base__/graphics/technology/automation-1.png",
+    prerequisites = {"electromagnetism"},
     effects =
     {
         {
@@ -229,5 +230,6 @@ data.raw.technology["advanced-electronics"]={
     },
     order = "a-d-b"
 }
-data.raw.technology["advanced-material-processing"].prerequisites = {"heat-resistance", "logistic-science-pack", "steel-processing"}
-data.raw.technology["oil-processing"].prerequisites = {"fluid-handling", "heat-resistance"}
+data.raw.technology["advanced-material-processing"].prerequisites = {"plating", "logistic-science-pack", "steel-processing"}
+data.raw.technology["oil-processing"].prerequisites = {"fluid-handling", "plating"}
+data.raw.technology["uranium-processing"].prerequisites = {"graphite", "concrete"}

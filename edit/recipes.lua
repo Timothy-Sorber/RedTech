@@ -237,8 +237,15 @@ data.raw.recipe["pipe-to-ground"]={
 data.raw.recipe["steel-furnace"] = {
     type = "recipe",
     name = "steel-furnace",
-    ingredients = {{"steel-plate", 3}, {"stone-brick", 5}, {"heat-resistant-plating", 5}},
+    ingredients = {{"steel-plate", 3}, {"stone-brick", 5}, {"heat-resistant-plating", 2}, {"stress-resistant-plating", 4}},
     result = "steel-furnace",
     energy_required = 5,
     enabled = false
+}
+data.raw.recipe["centrifuge"].ingredients = {
+    {"concrete", 50},
+    {"heat-resistant-plating", 10},
+    {"advanced-circuit", 50},
+    {"iron-gear-wheel", 50},
+    {"graphite", 20}
 }

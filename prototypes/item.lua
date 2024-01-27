@@ -106,5 +106,71 @@ local heatresistantplating={
 	subgroup = "raw-material",
 	order = "d[heat-resistant-plating]"
 }
-
-data:extend({basicmotor, electromagnet, basicprocessor, tincable, bolt, sand, glass, gravel, cement, gunpowder, largeirontube, cobaltplate, heatresistantplating})
+local stressresistantplating={
+	type = "item",
+	name = "stress-resistant-plating",
+	icons =
+	{
+		{
+			icon = "__redtech__/graphics/icons/plate_template.png",
+		},
+		{
+			icon = "__redtech__/graphics/icons/plate_template.png",
+			tint = {r=134/255, g=134/255, b=134/255}
+		}
+	},
+	icon_size = 128,
+	stack_size = 25,
+	subgroup = "raw-material",
+	order = "d[stress-resistant-plating]"
+}
+local graphite={
+	type="item",
+	name = "graphite",
+	icon = "__redtech__/graphics/icons/graphite.png",
+	icon_size = 128,
+	stack_size = 50,
+	subgroup = "intermediate-product",
+	order = "a[graphite]"
+}
+local fusionfuel = {
+	type = "item",
+	name = "fusion-fuel-cell",
+	icons =
+	{
+		{
+			icon = "__base__/graphics/icons/uranium-fuel-cell.png",
+		},
+		{
+			icon = "__base__/graphics/icons/uranium-fuel-cell.png",
+			tint = {r=134/255, g=134/255, b=134/255}
+		}
+	},
+	icon_size = 64, icon_mipmaps = 4,
+	pictures =
+	{
+		layers =
+		{
+			{
+				size = 64,
+				filename = "__base__/graphics/icons/uranium-fuel-cell.png",
+				scale = 0.25,
+				mipmap_count = 4
+			},
+			{
+				draw_as_light = true,
+				flags = {"light"},
+				size = 64,
+				filename = "__base__/graphics/icons/uranium-fuel-cell-light.png",
+				scale = 0.25,
+				mipmap_count = 4
+			}
+		}
+	},
+	subgroup = "intermediate-product",
+	order = "r[fusion-processing]-a[fusion-fuel-cell]",
+	fuel_category = "nuclear",
+	fuel_value = "32GJ",
+	stack_size = 1
+}
+data:extend({basicmotor, electromagnet, basicprocessor, tincable, bolt, sand, glass, gravel, cement, gunpowder, largeirontube, cobaltplate, heatresistantplating, stressresistantplating, graphite, fusionfuel})

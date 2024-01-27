@@ -154,15 +154,117 @@ local heatresistantplating={
 	type = "recipe",
 	name = "heat-resistant-plating",
 	category = "crafting-with-fluid",
-	energy_required = 3,
+	energy_required = 1,
 	ingredients = {
-		{type="fluid", name="water", amount="50"},
-		{type="item", name="steel-plate", amount="1"},
-		{type="item", name="copper-plate", amount="1"}
+		{type="fluid", name="water", amount=50},
+		{type="item", name="steel-plate", amount=1},
+		{type="item", name="cobalt-plate", amount=2}
 	},
 	result = "heat-resistant-plating",
 	result_count = 1,
 	subgroup = "intermediate-product",
 	enabled = false
 }
-data:extend({basicmotor, electromagnet, basicprocessor, tincable, bolt, cleanwater, sand, glass, gravel, cement, gunpowder, largeirontube, heatresistantplating})
+local stressresistantplating={
+	type = "recipe",
+	name = "stress-resistant-plating",
+	category = "crafting-with-fluid",
+	energy_required = 1,
+	ingredients = {
+		{type="fluid", name="water", amount=50},
+		{type="item", name="steel-plate", amount=1},
+		{type="item", name="iron-stick", amount=1},
+		{type="item", name="cobalt-plate", amount=2}
+	},
+	result = "stress-resistant-plating",
+	result_count = 1,
+	subgroup = "intermediate-product",
+	enabled = false
+}
+local graphite={
+	type = "recipe",
+	name = "graphite",
+	category = "chemistry",
+	energy_required = 5,
+	ingredients = {
+		{type="item", name="graphite", amount=2},
+		{type="fluid", name="heavy-oil", amount=25},
+		{type="fluid", name="steam", amount=25}
+	},
+	results = {
+		{type="item", name="graphite", amount=3},
+		{type="fluid", name="steam", amount=40}
+	},
+	crafting_machine_tint =
+	{
+		primary = {r = 0.2, g = 0.1, b = 0.1, a = 1.000},
+		secondary = {r = 0.18, g = 0.1, b = 0.06, a = 1.000},
+		tertiary = {r = 0.12, g = 0.1, b = 0.07, a = 1.000},
+		quaternary = {r = 0.21, g = 0.09, b = 0.12, a = 1.000},
+	},
+	icon = "__redtech__/graphics/icons/graphite.png",
+	icon_size = 128,
+	subgroup = "intermediate-product",
+	enabled = false
+}
+local sgraphite = {
+	type = "recipe",
+	name = "sgraphite",
+	category = "smelting",
+	energy_required = 10,
+	ingredients = {
+		{"wood", 25}
+	},
+	result = "graphite",
+	result_count = 1,
+	supgroup = "intermediate-product",
+	enabled = false
+}
+local waterelectrolysis = {
+	type = "recipe",
+	name = "water-electrolysis",
+	category = "chemistry",
+	energy_required = 2.5,
+	ingredients = {
+		{type="fluid", name="water", amount=50}
+	},
+	results = {
+		{type="fluid", name="hydrogen", amount=50},
+		{type="fluid", name="oxygen", amount=50}
+	},
+	crafting_machine_tint =
+	{
+		primary = {r=0, g=0.34, b=0.6, a=1.0},
+		secondary = {r=0, g=0.24, b=0.7, a=1.0},
+		tertiary = {r=0, g=0.44, b=0.5, a=1.0},
+		quaternary = {r=0, g=0.14, b=0.8, a=1.0},
+	},
+	icon = "__redtech__/graphics/icons/electrolysis.png",
+	icon_size = 128,
+	subgroup = "intermediate-product",
+	enabled = false
+}
+local fusionfuel = {
+	type = "recipe",
+	name = "fusion-fuel",
+	category = "chemistry",
+	energy_required = 5,
+	ingredients = {
+		{type="item", name="used-up-uranium-fuel-cell", amount=1},
+		{type="fluid", name="hydrogen", amount=75},
+		{type="fluid", name="oxygen", amount=75}
+	},
+	results = {
+		{type="item", name="fusion-fuel-cell", amount=1}
+	},
+	crafting_machine_tint =
+	{
+		primary = {r=0, g=0.34, b=0.6, a=1.0},
+		secondary = {r=0, g=0.24, b=0.7, a=1.0},
+		tertiary = {r=0, g=0.44, b=0.5, a=1.0},
+		quaternary = {r=0, g=0.14, b=0.8, a=1.0},
+	},
+	subgroup = "intermediate-product",
+	enabled = false
+}
+data:extend({basicmotor, electromagnet, basicprocessor, tincable, bolt, cleanwater, sand, glass, gravel, cement, gunpowder, largeirontube, heatresistantplating, stressresistantplating, graphite, sgraphite, waterelectrolysis, fusionfuel})

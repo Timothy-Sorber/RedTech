@@ -2,14 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed0a27fb-df82-4390-937a-7133b416c87e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/graphics/icons/heat_resistance.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/edit/final/Factorissimo2.lua" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graphics/icons/electrolysis.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graphics/icons/graphite.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graphics/icons/hydrogen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graphics/icons/oxygen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graphics/icons/plate_template.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graphics/icons/plate_template_stack.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/redtech_0.0.3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/redtech_0.0.5.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/control.lua" beforeDir="false" afterPath="$PROJECT_DIR$/control.lua" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edit/final/recipes.lua" beforeDir="false" afterPath="$PROJECT_DIR$/edit/final/recipes.lua" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-final-fixes.lua" beforeDir="false" afterPath="$PROJECT_DIR$/data-final-fixes.lua" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edit/final/AAI.lua" beforeDir="false" afterPath="$PROJECT_DIR$/edit/final/AAI.lua" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edit/recipes.lua" beforeDir="false" afterPath="$PROJECT_DIR$/edit/recipes.lua" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/edit/technologies.lua" beforeDir="false" afterPath="$PROJECT_DIR$/edit/technologies.lua" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphics/icons/electromagnet.png" beforeDir="false" afterPath="$PROJECT_DIR$/graphics/icons/electromagnet.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphics/icons/heat_resistant_plating.png" beforeDir="false" afterPath="$PROJECT_DIR$/graphics/icons/heat_resistant_plating.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/info.json" beforeDir="false" afterPath="$PROJECT_DIR$/info.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/locale/en/config.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/locale/en/config.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prototypes/fluid.lua" beforeDir="false" afterPath="$PROJECT_DIR$/prototypes/fluid.lua" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/prototypes/item.lua" beforeDir="false" afterPath="$PROJECT_DIR$/prototypes/item.lua" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/prototypes/recipe.lua" beforeDir="false" afterPath="$PROJECT_DIR$/prototypes/recipe.lua" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/prototypes/technology.lua" beforeDir="false" afterPath="$PROJECT_DIR$/prototypes/technology.lua" afterDir="false" />
@@ -38,10 +47,11 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="codeWithMe.voiceChat.enabledByDefault" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../zzz-nohandcrafting_1.0.0" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -94,7 +104,21 @@
       <option name="project" value="LOCAL" />
       <updated>1699761617297</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Commit Message">
+      <created>1699816483477</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1699816483477</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Commit Message">
+      <created>1699816512544</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1699816512544</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -110,6 +134,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="commit message" />
     <MESSAGE value="disabled handcrafting and changed spawn items to make it possible." />
     <MESSAGE value="Started adding AAI compatibility. (changed starting items and removed some items/technology)" />

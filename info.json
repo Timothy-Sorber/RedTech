@@ -1,8 +1,9 @@
 {
 	"name": "redtech",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"title": "redtech",
 	"author": "redstone_block180",
 	"factorio_version": "1.1",
-	"dependencies": ["bztin >= 0.1.10", "(?) aai-industry >= 0.5.20"]
+	"dependencies": ["bztin >= 0.1.10", "(?) aai-industry >= 0.5.20", "(?) factorissimo2 >= 2.5.3", "?fireproof-bots >= 1.1.3", "?fireproof-trains >= 1.0.3", "!early-robots"],
+	"description": "An in-development overhaul mod. This mod has basic AAI Industry compatibility."
 }
